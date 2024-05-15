@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: YoungSerif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root{
+    --radius:10px;
+}
+
+
+.responsive-img img{display: none;}
+
+/*  this is for radius of all cards */
+.conatiner,.conatiner>img,.preparing-time{border-radius: var(--radius);}
+
+
+
+/* this is Body section  */
+body{
+    margin: 0px;padding: 0px;
+    background-color: #f3e6d8;
+    font-family: Outfit;
+    color: rgb(76, 75, 75);
+    font-size: 16px;
+}
+
+/* these for list items,maintaining proper space and gap */
+body p{display: inline-block;}
+body li{padding-left: 10px;}
+ul{padding-left: 24px; margin: 0px;}
+ul li{height: 30px;color: rgb(76, 75, 75) ;}
+
+
+
+/*  Container section */
+.conatiner{
+    margin: 20px auto;
+    max-width: 677px;
+    max-height: 1600px;
+    background-color: white;
+    padding: 30px;
+}
+.conatiner img{width: 100%;}
+
+
+/* Title of the web page */
+.head{font-size: 30px;font-family: YoungSerif;margin-top: 30px;color:black;}
+
+
+/* Preparing time section */
+.preparing-time{background-color: #fff5fa;padding: 30px;}
+.preparing-time>span{
+    font-size: 20px;
+    color:#7b284f;
+    font-weight:bold;
+}
+.preparing-time li::marker{color: #7b284f;}
+
+/*  These are for Ingredients,Instructions section */
+.title{margin:20px 0px;font-size: 24px;color:#854632;font-family: YoungSerif;}
+.Instruction ol{padding-left: 25px;}
+.Instruction li{margin-top: 10px;}
+li::marker {color: hsl(14, 45%, 36%);font-weight: bold;}
+
+
+
+/* table for Nutrition section */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    max-height: 500px;
+  }
+
+td{
+    padding: 10px 40px;
+    border-bottom: 1px solid rgba(168, 167, 167, 0.316);
+    line-height: 27px;
+}
+
+/* coloring texts for the right side elements of the table */
+td:nth-child(even){
+    color:#854632;
+    font-weight: bold;
+}
+
+
+
+/* this is divider for all section */
+.divider{margin-top: 30px; width: auto;border-bottom: 1px solid rgba(128, 128, 128, 0.531);}
+
+
+
+/* responsive desgin */
+
+@media(max-width:540px){
+    .conatiner{margin: 0px;}
+    .attribution, p,li,span,b{font-size: 14px;}
+    body {background-color: white;}
+    .conatiner img{display: none;}
+    .responsive-img img{display: block; width: 100%;}
+    .head{margin-top: 5px;}
+}
+
+
+
